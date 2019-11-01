@@ -1,0 +1,636 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+	<model name="roboy_ciie">
+		<link name="head">
+			<self_collide>false</self_collide>
+			<pose frame="">0.0005102180295691139 0.046445898229309404 0.8611776443142852 0.0 -0.0 0.0</pose>
+			<inertial>
+				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
+				<mass>2.049574035129589</mass>
+				<inertia>
+					<ixx>1.5567369122227759</ixx>
+					<ixy>-6.313507101682236e-05</ixy>
+					<ixz>-0.0010119595995300493</ixz>
+					<iyy>1.5459780882221161</iyy>
+					<iyz>-0.08466584811454989</iyz>
+					<izz>0.0305276597273415</izz>
+				</inertia>
+			</inertial>
+			<collision name="head_collision">
+				<geometry>
+					<mesh>
+						<uri>model://roboy_ciie/meshes/CAD/head.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="head_visual">
+				<geometry>
+					<mesh>
+						<uri>model://roboy_ciie/meshes/CAD/head.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="torso">
+			<self_collide>false</self_collide>
+			<pose frame="">1.5654144647214706e-16 0.001521781085073083 0.2993372744464763 0.0 -0.0 0.0</pose>
+			<inertial>
+				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
+				<mass>6.128466296598597</mass>
+				<inertia>
+					<ixx>1.8481384889717514</ixx>
+					<ixy>-0.0009183207552126455</ixy>
+					<ixz>0.00317101566132191</ixz>
+					<iyy>1.990240709546271</iyy>
+					<iyz>0.006417191930709186</iyz>
+					<izz>0.17173089640472144</izz>
+				</inertia>
+			</inertial>
+			<collision name="torso_collision">
+				<geometry>
+					<mesh>
+						<uri>model://roboy_ciie/meshes/CAD/torso.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="torso_visual">
+				<geometry>
+					<mesh>
+						<uri>model://roboy_ciie/meshes/CAD/torso.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="arm_left_upper">
+			<self_collide>false</self_collide>
+			<pose frame="">0.2995944125598117 0.013309240197336994 0.49906604495903834 0.0 -0.0 0.0</pose>
+			<inertial>
+				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
+				<mass>0.1625136542992034</mass>
+				<inertia>
+					<ixx>0.04065473609726419</ixx>
+					<ixy>-0.000645907414891628</ixy>
+					<ixz>-0.024282024467918748</ixz>
+					<iyy>0.05517960681953695</iyy>
+					<iyz>-0.001078512237491557</iyz>
+					<izz>0.014735079262138061</izz>
+				</inertia>
+			</inertial>
+			<collision name="arm_left_upper_collision">
+				<geometry>
+					<mesh>
+						<uri>model://roboy_ciie/meshes/CAD/arm_left_upper.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="arm_left_upper_visual">
+				<geometry>
+					<mesh>
+						<uri>model://roboy_ciie/meshes/CAD/arm_left_upper.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="arm_right_upper">
+			<self_collide>false</self_collide>
+			<pose frame="">-0.30223166398631157 0.009510807549406431 0.34257513903735193 0.0 -0.0 0.0</pose>
+			<inertial>
+				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
+				<mass>1.7836844814040722</mass>
+				<inertia>
+					<ixx>0.221884986508845</ixx>
+					<ixy>0.005040405919551761</ixy>
+					<ixz>0.1851937417851102</ixz>
+					<iyy>0.38331239919783533</iyy>
+					<iyz>-0.006455020912793508</iyz>
+					<izz>0.1658779032231309</izz>
+				</inertia>
+			</inertial>
+			<collision name="arm_right_upper_collision">
+				<geometry>
+					<mesh>
+						<uri>model://roboy_ciie/meshes/CAD/arm_right_upper.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="arm_right_upper_visual">
+				<geometry>
+					<mesh>
+						<uri>model://roboy_ciie/meshes/CAD/arm_right_upper.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="shoulder_left_link1">
+			<self_collide>false</self_collide>
+			<pose frame="">0.29189388396936844 0.013936649708446084 0.5448924278024039 0.0 -0.0 0.0</pose>
+			<inertial>
+				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
+				<mass>0.09036188404972216</mass>
+				<inertia>
+					<ixx>0.02685378687433716</ixx>
+					<ixy>-0.00036759420957439013</ixy>
+					<ixz>-0.01437212697441521</ixz>
+					<iyy>0.03453525279236198</iyy>
+					<iyz>-0.0006862058794001133</iyz>
+					<izz>0.0077236593139688075</izz>
+				</inertia>
+			</inertial>
+			<collision name="shoulder_left_link1_collision">
+				<geometry>
+					<mesh>
+						<uri>model://roboy_ciie/meshes/CAD/shoulder_left_link1.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="shoulder_left_link1_visual">
+				<geometry>
+					<mesh>
+						<uri>model://roboy_ciie/meshes/CAD/shoulder_left_link1.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="shoulder_left_link2">
+			<self_collide>false</self_collide>
+			<pose frame="">0.29189387258386296 0.013936775290985024 0.5448924436270218 0.0 -0.0 0.0</pose>
+			<inertial>
+				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
+				<mass>0.00711317010884494</mass>
+				<inertia>
+					<ixx>0.0021134396605301214</ixx>
+					<ixy>-2.893679789213243e-05</ixy>
+					<ixz>-0.0011313551510286908</ixz>
+					<iyy>0.00271811459643765</iyy>
+					<iyz>-5.401772354685746e-05</iyz>
+					<izz>0.000607540702812908</izz>
+				</inertia>
+			</inertial>
+			<collision name="shoulder_left_link2_collision">
+				<geometry>
+					<mesh>
+						<uri>model://roboy_ciie/meshes/CAD/shoulder_left_link2.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="shoulder_left_link2_visual">
+				<geometry>
+					<mesh>
+						<uri>model://roboy_ciie/meshes/CAD/shoulder_left_link2.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="shoulder_right_link1">
+			<self_collide>false</self_collide>
+			<pose frame="">-0.29317381623663624 0.009234619138342707 0.5481032586387985 0.0 -0.0 0.0</pose>
+			<inertial>
+				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
+				<mass>0.09036760208789225</mass>
+				<inertia>
+					<ixx>0.02716277857038176</ixx>
+					<ixy>0.00024465659548951447</ixy>
+					<ixz>0.014521126966952602</ixz>
+					<iyy>0.03492224741539772</iyy>
+					<iyz>-0.00045739786268846115</iyz>
+					<izz>0.0077819738648302085</izz>
+				</inertia>
+			</inertial>
+			<collision name="shoulder_right_link1_collision">
+				<geometry>
+					<mesh>
+						<uri>model://roboy_ciie/meshes/CAD/shoulder_right_link1.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="shoulder_right_link1_visual">
+				<geometry>
+					<mesh>
+						<uri>model://roboy_ciie/meshes/CAD/shoulder_right_link1.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="shoulder_right_link2">
+			<self_collide>false</self_collide>
+			<pose frame="">-0.2931738685724693 0.009234231768945902 0.5481033912318385 0.0 -0.0 0.0</pose>
+			<inertial>
+				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
+				<mass>0.007113171768782596</mass>
+				<inertia>
+					<ixx>0.002137629132340016</ixx>
+					<ixy>1.9257030781476826e-05</ixy>
+					<ixz>0.0011430126664005362</ixz>
+					<iyy>0.002748406222637266</iyy>
+					<iyz>-3.600199406508284e-05</iyz>
+					<izz>0.0006120927174830887</izz>
+				</inertia>
+			</inertial>
+			<collision name="shoulder_right_link2_collision">
+				<geometry>
+					<mesh>
+						<uri>model://roboy_ciie/meshes/CAD/shoulder_right_link2.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="shoulder_right_link2_visual">
+				<geometry>
+					<mesh>
+						<uri>model://roboy_ciie/meshes/CAD/shoulder_right_link2.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="zed_camera_left_lense">
+			<self_collide>false</self_collide>
+			<pose frame="">0.060224029002958875 -0.06914536611449566 0.9297742812708069 0.0 -0.0 0.0</pose>
+			<inertial>
+				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
+				<mass>0.005755421856391891</mass>
+				<inertia>
+					<ixx>0.005003354055639959</ixx>
+					<ixy>2.3967379469334976e-05</ixy>
+					<ixz>-0.0003222735583266803</ixz>
+					<iyy>0.004996529496255549</iyy>
+					<iyz>0.000370054972711012</iyz>
+					<izz>4.878384607433584e-05</izz>
+				</inertia>
+			</inertial>
+			<collision name="zed_camera_left_lense_collision">
+				<geometry>
+					<mesh>
+						<uri>model://roboy_ciie/meshes/CAD/zed_camera_left_lense.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="zed_camera_left_lense_visual">
+				<geometry>
+					<mesh>
+						<uri>model://roboy_ciie/meshes/CAD/zed_camera_left_lense.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="zed_camera_right_lense">
+			<self_collide>false</self_collide>
+			<pose frame="">-0.05977745584801778 -0.06952236314727904 0.9297742812332496 0.0 -0.0 0.0</pose>
+			<inertial>
+				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
+				<mass>0.0057554218551259745</mass>
+				<inertia>
+					<ixx>0.0050036549322322954</ixx>
+					<ixy>-2.391821338968771e-05</ixy>
+					<ixz>0.00031988357548007145</ixz>
+					<iyy>0.004996221065096928</iyy>
+					<iyz>0.00037207237543609864</iyz>
+					<izz>4.877629449989427e-05</izz>
+				</inertia>
+			</inertial>
+			<collision name="zed_camera_right_lense_collision">
+				<geometry>
+					<mesh>
+						<uri>model://roboy_ciie/meshes/CAD/zed_camera_right_lense.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="zed_camera_right_lense_visual">
+				<geometry>
+					<mesh>
+						<uri>model://roboy_ciie/meshes/CAD/zed_camera_right_lense.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="zed_camera">
+			<self_collide>false</self_collide>
+			<pose frame="">0.004244484790251953 -0.057938621286604985 0.9271942136470953 0.0 -0.0 0.0</pose>
+			<inertial>
+				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
+				<mass>0.009633907989226701</mass>
+				<inertia>
+					<ixx>0.008314802982788687</ixx>
+					<ixy>2.4365338952166025e-06</ixy>
+					<ixz>-3.793293439362343e-05</ixz>
+					<iyy>0.008297308522063661</iyy>
+					<iyz>0.0005174870196291635</iyz>
+					<izz>4.725323656366554e-05</izz>
+				</inertia>
+			</inertial>
+			<collision name="zed_camera_collision">
+				<geometry>
+					<mesh>
+						<uri>model://roboy_ciie/meshes/CAD/zed_camera.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="zed_camera_visual">
+				<geometry>
+					<mesh>
+						<uri>model://roboy_ciie/meshes/CAD/zed_camera.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="neck_link1">
+			<self_collide>false</self_collide>
+			<pose frame="">-1.506123287543706e-10 0.0015217809344427158 0.7156779292283452 0.0 -0.0 0.0</pose>
+			<inertial>
+				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
+				<mass>0.017038665636260372</mass>
+				<inertia>
+					<ixx>0.008728267843512112</ixx>
+					<ixy>3.905246324887799e-15</ixy>
+					<ixz>1.836596576210159e-12</ixz>
+					<iyy>0.008728228385076956</iyy>
+					<iyz>-1.855689641317778e-05</iyz>
+					<izz>1.150229285457388e-06</izz>
+				</inertia>
+			</inertial>
+			<collision name="neck_link1_collision">
+				<geometry>
+					<mesh>
+						<uri>model://roboy_ciie/meshes/CAD/neck_link1.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="neck_link1_visual">
+				<geometry>
+					<mesh>
+						<uri>model://roboy_ciie/meshes/CAD/neck_link1.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="neck_link2">
+			<self_collide>false</self_collide>
+			<pose frame="">-1.2765957254235939e-10 0.0015217809573941732 0.7156779292283448 0.0 -0.0 0.0</pose>
+			<inertial>
+				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
+				<mass>0.011421521917888835</mass>
+				<inertia>
+					<ixx>0.005850573477666747</ixx>
+					<ixy>2.21885727293928e-15</ixy>
+					<ixz>1.0435059226432398e-12</ixz>
+					<iyy>0.005850547027508899</iyy>
+					<iyz>-1.243923713466404e-05</iyz>
+					<izz>5.28219512713884e-07</izz>
+				</inertia>
+			</inertial>
+			<collision name="neck_link2_collision">
+				<geometry>
+					<mesh>
+						<uri>model://roboy_ciie/meshes/CAD/neck_link2.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="neck_link2_visual">
+				<geometry>
+					<mesh>
+						<uri>model://roboy_ciie/meshes/CAD/neck_link2.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="elbow_core_right">
+			<self_collide>false</self_collide>
+			<pose frame="">-0.2866178983568218 -0.02478036473024489 0.1904462824203618 0.0 -0.0 0.0</pose>
+			<inertial>
+				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
+				<mass>0.03214853806162162</mass>
+				<inertia>
+					<ixx>0.001196873204896521</ixx>
+					<ixy>-0.000228322324529166</ixy>
+					<ixz>0.0017548831498616344</ixz>
+					<iyy>0.003814219100444652</iyy>
+					<iyz>0.00015166432125740181</iyz>
+					<izz>0.0026700837763339006</izz>
+				</inertia>
+			</inertial>
+			<collision name="elbow_core_right_collision">
+				<geometry>
+					<mesh>
+						<uri>model://roboy_ciie/meshes/CAD/elbow_core_right.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="elbow_core_right_visual">
+				<geometry>
+					<mesh>
+						<uri>model://roboy_ciie/meshes/CAD/elbow_core_right.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="hand_right">
+			<self_collide>false</self_collide>
+			<pose frame="">-0.2810992715604035 0.008852022021007442 -0.07247831993071484 0.0 -0.0 0.0</pose>
+			<inertial>
+				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
+				<mass>0.05321603127799325</mass>
+				<inertia>
+					<ixx>0.000299058723174013</ixx>
+					<ixy>0.00013237431670928813</ixy>
+					<ixz>-0.001083775908933044</ixz>
+					<iyy>0.004499009348480074</iyy>
+					<iyz>3.412127718514551e-05</iyz>
+					<izz>0.004219295090893337</izz>
+				</inertia>
+			</inertial>
+			<collision name="hand_right_collision">
+				<geometry>
+					<mesh>
+						<uri>model://roboy_ciie/meshes/CAD/hand_right.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="hand_right_visual">
+				<geometry>
+					<mesh>
+						<uri>model://roboy_ciie/meshes/CAD/hand_right.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<joint name="shoulder_right_axis0" type="revolute">
+			<parent>torso</parent>
+			<child>shoulder_right_link1</child>
+			<pose frame="">-5.233583294739219e-08 -3.8736939575012564e-07 1.3259304864732258e-07 0 0 0</pose>
+			<axis>
+				<xyz>0.9986354432836153 -0.050744296328168695 0.012339684270770077</xyz>
+				<limit>
+					<lower>-3.141592653589793</lower>
+					<upper>3.141592653589793</upper>
+				</limit>
+				<use_parent_model_frame>0</use_parent_model_frame>
+			</axis>
+		</joint>
+		<joint name="shoulder_right_axis1" type="revolute">
+			<parent>shoulder_right_link1</parent>
+			<child>shoulder_right_link2</child>
+			<pose frame="">1.4210854715202004e-16 1.0502709812953982e-15 8.668621376273222e-15 0 0 0</pose>
+			<axis>
+				<xyz>-0.050743529127072876 -0.9987116467140966 -0.0003754588500051825</xyz>
+				<limit>
+					<lower>-3.141592653589793</lower>
+					<upper>3.141592653589793</upper>
+				</limit>
+				<use_parent_model_frame>0</use_parent_model_frame>
+			</axis>
+		</joint>
+		<joint name="shoulder_left_axis0" type="revolute">
+			<parent>torso</parent>
+			<child>shoulder_left_link1</child>
+			<pose frame="">-1.1385505445105081e-08 1.2559192860583934e-07 1.4254478415409721e-08 0 0 0</pose>
+			<axis>
+				<xyz>-0.9986354432836135 -0.05074429632816786 0.012339684270767625</xyz>
+				<limit>
+					<lower>-3.141592653589793</lower>
+					<upper>3.141592653589793</upper>
+				</limit>
+				<use_parent_model_frame>0</use_parent_model_frame>
+			</axis>
+		</joint>
+		<joint name="shoulder_left_axis1" type="revolute">
+			<parent>shoulder_left_link1</parent>
+			<child>shoulder_left_link2</child>
+			<pose frame="">-3.552713678800501e-17 9.389691246752819e-12 -1.5701394318057283e-09 0 0 0</pose>
+			<axis>
+				<xyz>-0.05101049431667528 0.998448888302568 -0.022310242422104942</xyz>
+				<limit>
+					<lower>-3.141592653589793</lower>
+					<upper>3.141592653589793</upper>
+				</limit>
+				<use_parent_model_frame>0</use_parent_model_frame>
+			</axis>
+		</joint>
+		<joint name="shoulder_left_axis2" type="revolute">
+			<parent>shoulder_left_link2</parent>
+			<child>arm_left_upper</child>
+			<pose frame="">-0.007700539975948715 0.0006275351030377307 0.04582639709784409 0 0 0</pose>
+			<axis>
+				<xyz>-0.011188426489531611 -0.022909252225327616 -0.9996749398055182</xyz>
+				<limit>
+					<lower>-3.141592653589793</lower>
+					<upper>3.141592653589793</upper>
+				</limit>
+				<use_parent_model_frame>0</use_parent_model_frame>
+			</axis>
+		</joint>
+		<joint name="neck_axis0" type="revolute">
+			<parent>torso</parent>
+			<child>neck_link1</child>
+			<pose frame="">1.5061504170881626e-10 1.5061483921163798e-10 0.0 0 0 0</pose>
+			<axis>
+				<xyz>0.12498691257369461 -0.9921583904222635 6.724690979212187e-15</xyz>
+				<limit>
+					<lower>-0.5235987755982988</lower>
+					<upper>0.5235987755982988</upper>
+				</limit>
+				<use_parent_model_frame>0</use_parent_model_frame>
+			</axis>
+		</joint>
+		<joint name="neck_axis2" type="revolute">
+			<parent>neck_link2</parent>
+			<child>head</child>
+			<pose frame="">-0.0005102180295663994 -0.04492411714425187 -0.14549971508594026 0 0 0</pose>
+			<axis>
+				<xyz>-2.4972812708040394e-14 3.6318961320475e-15 1.0</xyz>
+				<limit>
+					<lower>-0.5235987755982988</lower>
+					<upper>0.5235987755982988</upper>
+				</limit>
+				<use_parent_model_frame>0</use_parent_model_frame>
+			</axis>
+		</joint>
+		<joint name="neck_axis1" type="revolute">
+			<parent>neck_link1</parent>
+			<child>neck_link2</child>
+			<pose frame="">1.2766228137374175e-10 1.27663441207293e-10 2.842170943040401e-16 0 0 0</pose>
+			<axis>
+				<xyz>-0.9921583904222635 -0.12498691257369464 -2.432304617639304e-14</xyz>
+				<limit>
+					<lower>-0.5235987755982988</lower>
+					<upper>0.5235987755982988</upper>
+				</limit>
+				<use_parent_model_frame>0</use_parent_model_frame>
+			</axis>
+		</joint>
+		<joint name="zed_camera_right" type="fixed">
+			<parent>zed_camera</parent>
+			<child>zed_camera_right_lense</child>
+			<pose frame="">-3.4778066173002385e-05 0.011070006217811717 -0.0023530140921069176 0 0 0</pose>
+		</joint>
+		<joint name="zed_camera_left" type="fixed">
+			<parent>zed_camera</parent>
+			<child>zed_camera_left_lense</child>
+			<pose frame="">-5.466550911876311e-05 0.011069943702269311 -0.0023530142604900562 0 0 0</pose>
+		</joint>
+		<joint name="zed_camera_mount" type="fixed">
+			<parent>head</parent>
+			<child>zed_camera</child>
+			<pose frame="">0.01743765468509108 0.001405588958414743 0.008052233827783653 0 0 0</pose>
+		</joint>
+		<joint name="elbow_right_axis0" type="revolute">
+			<parent>arm_right_upper</parent>
+			<child>elbow_core_right</child>
+			<pose frame="">-0.004688041097946041 0.03403741704720186 0.04450305032541245 0 0 0</pose>
+			<axis>
+				<xyz>-0.9986354432836168 0.05074429632810038 -0.012339684270770467</xyz>
+				<limit>
+					<lower>-1.5707963267948966</lower>
+					<upper>0.0</upper>
+				</limit>
+				<use_parent_model_frame>0</use_parent_model_frame>
+			</axis>
+		</joint>
+		<joint name="elbow_right_axis1" type="revolute">
+			<parent>elbow_core_right</parent>
+			<child>arm_right_lower</child>
+			<pose frame="">-0.2886971307984601 0.00915832673728567 0.14497470092849654 0 0 0</pose>
+			<axis>
+				<xyz>-0.9986354432836155 0.05074429632810025 -0.012339684270770573</xyz>
+				<limit>
+					<lower>-1.5707963267948966</lower>
+					<upper>0.0</upper>
+				</limit>
+				<use_parent_model_frame>0</use_parent_model_frame>
+			</axis>
+		</joint>
+		<joint name="wrist_right" type="ball">
+			<parent>arm_right_lower</parent>
+			<child>hand_right</child>
+			<pose frame="">-0.0005120035967210867 2.520073405059664e-05 0.007524552969833973 0 0 0</pose>
+		</joint>
+		<plugin filename="libcardsflow_gazebo_plugin.so" name="cardsflow_gazebo_plugin"/>
+	</model>
+</sdf>

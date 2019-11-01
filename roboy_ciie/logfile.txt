@@ -1,0 +1,104 @@
+Body: head
+COM: head 0.05102180295691138 4.64458982293094 86.11776443142853
+exporting stl of head
+Body: torso
+COM: torso 1.5654144647214707e-14 0.15217810850730829 29.93372744464763
+exporting stl of torso
+Body: arm_left_upper
+COM: arm_left_upper 29.959441255981165 1.3309240197336993 49.906604495903835
+exporting stl of arm_left_upper
+Body: arm_right_upper
+COM: arm_right_upper -30.223166398631154 0.9510807549406431 34.257513903735195
+exporting stl of arm_right_upper
+Body: shoulder_left_link1
+COM: shoulder_left_link1 29.18938839693684 1.3936649708446083 54.48924278024039
+exporting stl of shoulder_left_link1
+Body: shoulder_left_link2
+COM: shoulder_left_link2 29.189387258386294 1.3936775290985024 54.48924436270218
+exporting stl of shoulder_left_link2
+Body: shoulder_right_link1
+COM: shoulder_right_link1 -29.317381623663625 0.9234619138342706 54.810325863879854
+exporting stl of shoulder_right_link1
+Body: shoulder_right_link2
+COM: shoulder_right_link2 -29.31738685724693 0.9234231768945903 54.81033912318385
+exporting stl of shoulder_right_link2
+Body: zed_camera_left_lense
+COM: zed_camera_left_lense 6.022402900295887 -6.9145366114495665 92.97742812708069
+exporting stl of zed_camera_left_lense
+Body: zed_camera_right_lense
+COM: zed_camera_right_lense -5.977745584801778 -6.952236314727903 92.97742812332496
+exporting stl of zed_camera_right_lense
+Body: zed_camera
+COM: zed_camera 0.4244484790251953 -5.793862128660498 92.71942136470953
+exporting stl of zed_camera
+Body: neck_link1
+COM: neck_link1 -1.5061232875437062e-08 0.15217809344427158 71.56779292283451
+exporting stl of neck_link1
+Body: neck_link2
+COM: neck_link2 -1.276595725423594e-08 0.15217809573941732 71.56779292283449
+exporting stl of neck_link2
+Body: elbow_core_right
+COM: elbow_core_right -28.66178983568218 -2.4780364730244893 19.04462824203618
+exporting stl of elbow_core_right
+Body: arm_right_lower
+Body: hand_right
+COM: hand_right -28.10992715604035 0.8852022021007441 -7.247831993071484
+exporting stl of hand_right
+Joint: EXPORT_shoulder_right_axis0
+	parent: torso
+	child: shoulder_right_link1
+	pos: -5.233583294739219e-06	-3.873693957501256e-05	1.3259304864732258e-05
+Joint: EXPORT_shoulder_right_axis1
+	parent: shoulder_right_link1
+	child: shoulder_right_link2
+	pos: 1.4210854715202004e-14	1.0502709812953981e-13	8.668621376273222e-13
+Joint: EXPORT_shoulder_right_axis2
+	ERROR writing joint EXPORT_shoulder_right_axis2, check your rigid EXPORT groups, the parent/child link must be part of a rigid Export group!
+Joint: EXPORT_shoulder_left_axis0
+	parent: torso
+	child: shoulder_left_link1
+	pos: -1.1385505445105082e-06	1.2559192860583934e-05	1.4254478415409721e-06
+Joint: EXPORT_shoulder_left_axis1
+	parent: shoulder_left_link1
+	child: shoulder_left_link2
+	pos: -3.552713678800501e-15	9.389691246752818e-10	-1.5701394318057282e-07
+Joint: EXPORT_shoulder_left_axis2
+	parent: shoulder_left_link2
+	child: arm_left_upper
+	pos: -0.7700539975948715	0.06275351030377307	4.582639709784409
+Joint: EXPORT_neck_axis0
+	parent: torso
+	child: neck_link1
+	pos: 1.5061504170881625e-08	1.50614839211638e-08	0.0
+Joint: EXPORT_neck_axis2
+	parent: neck_link2
+	child: head
+	pos: -0.05102180295663993	-4.492411714425186	-14.549971508594027
+Joint: EXPORT_neck_axis1
+	parent: neck_link1
+	child: neck_link2
+	pos: 1.2766228137374174e-08	1.27663441207293e-08	2.842170943040401e-14
+Joint: EXPORT_zed_camera_right
+	parent: zed_camera
+	child: zed_camera_right_lense
+	pos: -0.0034778066173002387	1.1070006217811716	-0.23530140921069176
+Joint: EXPORT_zed_camera_left
+	parent: zed_camera
+	child: zed_camera_left_lense
+	pos: -0.005466550911876311	1.1069943702269311	-0.2353014260490056
+Joint: EXPORT_zed_camera_mount
+	parent: head
+	child: zed_camera
+	pos: 1.743765468509108	0.1405588958414743	0.8052233827783652
+Joint: EXPORT_elbow_right_axis0
+	parent: arm_right_upper
+	child: elbow_core_right
+	pos: -0.4688041097946041	3.4037417047201863	4.4503050325412445
+Joint: EXPORT_elbow_right_axis1
+	parent: elbow_core_right
+	child: arm_right_lower
+	pos: -28.869713079846008	0.9158326737285669	14.497470092849653
+Joint: EXPORT_wrist_right
+	parent: arm_right_lower
+	child: hand_right
+	pos: -0.051200359672108675	0.002520073405059664	0.7524552969833973
