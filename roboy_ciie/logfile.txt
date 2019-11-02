@@ -70,30 +70,10 @@ exporting stl of hand_left
 Body: picoflex
 COM: picoflex 0.792199891050512 -10.597295206521437 38.11428683479247
 exporting stl of picoflex
-Joint: EXPORT_shoulder_right_axis0
-	parent: torso
-	child: shoulder_right_link1
-	pos: -5.233583294739219e-06	-3.873693957501256e-05	1.3259304864732258e-05
-Joint: EXPORT_shoulder_right_axis1
-	parent: shoulder_right_link1
-	child: shoulder_right_link2
-	pos: 1.4210854715202004e-14	1.0502709812953981e-13	8.668621376273222e-13
-Joint: EXPORT_shoulder_right_axis2
-	parent: shoulder_right_link2
-	child: arm_right_upper
-	pos: 0.6669556558846388	-0.17001969820796525	18.649631419586647
 Joint: EXPORT_zed_camera_mount
 	parent: head
 	child: zed_camera
 	pos: 1.743765468509108	0.1405588958414743	0.8052233827783652
-Joint: EXPORT_zed_camera_right
-	parent: zed_camera
-	child: zed_camera_right_lense
-	pos: -0.0034778066173002387	1.1070006217811716	-0.23530140921069176
-Joint: EXPORT_zed_camera_left
-	parent: zed_camera
-	child: zed_camera_left_lense
-	pos: -0.005466550911876311	1.1069943702269311	-0.2353014260490056
 Joint: EXPORT_neck_axis0
 	parent: torso
 	child: neck_link1
@@ -106,6 +86,14 @@ Joint: EXPORT_neck_axis1
 	parent: neck_link1
 	child: neck_link2
 	pos: 1.2766228137374174e-08	1.27663441207293e-08	2.842170943040401e-14
+Joint: EXPORT_zed_camera_right
+	parent: zed_camera
+	child: zed_camera_right_lense
+	pos: -0.0034778066173002387	1.1070006217811716	-0.23530140921069176
+Joint: EXPORT_zed_camera_left
+	parent: zed_camera
+	child: zed_camera_left_lense
+	pos: -0.005466550911876311	1.1069943702269311	-0.2353014260490056
 Joint: EXPORT_elbow_right_axis0
 	parent: arm_right_upper
 	child: elbow_core_right
@@ -146,10 +134,6 @@ Joint: EXPORT_wrist_left_axis2
 	parent: wrist_left_link2
 	child: hand_left
 	pos: 0.0038730823724861807	-0.19564266446299394	1.058205828232781
-Joint: EXPORT_picoflex
-	parent: torso
-	child: picoflex
-	pos: -0.7921998910503637	-0.2850437680000386	6.99530002077001
 Joint: EXPORT_shoulder_left_axis0
 	parent: torso
 	child: shoulder_left_link1
@@ -162,3 +146,19 @@ Joint: EXPORT_shoulder_left_axis2
 	parent: shoulder_left_link2
 	child: arm_left_upper
 	pos: -0.7831850731747139	0.20481989129849265	18.309955921130218
+Joint: EXPORT_shoulder_right_axis0
+	parent: torso
+	child: shoulder_right_link1
+	pos: -5.233583294739219e-06	-3.873693957501256e-05	1.3259304864732258e-05
+Joint: EXPORT_shoulder_right_axis1
+	parent: shoulder_right_link1
+	child: shoulder_right_link2
+	pos: 1.4210854715202004e-14	1.0502709812953981e-13	8.668621376273222e-13
+Joint: EXPORT_shoulder_right_axis2
+	parent: shoulder_right_link2
+	child: arm_right_upper
+	pos: 0.6669556558846388	-0.17001969820796525	18.649631419586647
+Joint: EXPORT_picoflex
+	parent: torso
+	child: picoflex
+	pos: -0.7921998910503637	-0.2850437680000386	6.99530002077001
