@@ -65,38 +65,6 @@
 				</geometry>
 			</visual>
 		</link>
-		<link name="head">
-			<self_collide>false</self_collide>
-			<pose frame="">2.4611174625077045e-05 -0.0016286099831791623 0.19372598298431493 0.0 -0.0 0.0</pose>
-			<inertial>
-				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
-				<mass>2.6664081866441176</mass>
-				<inertia>
-					<ixx>0.13857408469680862</ixx>
-					<ixy>1.9616737535562442e-05</ixy>
-					<ixz>-3.920317094358494e-05</ixz>
-					<iyy>0.13933836843914202</iyy>
-					<iyz>-0.002684152071919728</iyz>
-					<izz>0.03361440293738789</izz>
-				</inertia>
-			</inertial>
-			<collision name="head_collision">
-				<geometry>
-					<mesh>
-						<uri>model://head_testbed/meshes/CAD/head.stl</uri>
-						<scale>0.001 0.001 0.001</scale>
-					</mesh>
-				</geometry>
-			</collision>
-			<visual name="head_visual">
-				<geometry>
-					<mesh>
-						<uri>model://head_testbed/meshes/CAD/head.stl</uri>
-						<scale>0.001 0.001 0.001</scale>
-					</mesh>
-				</geometry>
-			</visual>
-		</link>
 		<link name="head_link1">
 			<self_collide>false</self_collide>
 			<pose frame="">4.557263000984424e-19 -1.7659394128814645e-18 0.026000000000000047 0.0 -0.0 0.0</pose>
@@ -190,7 +158,7 @@
 		<joint name="head_axis2" type="revolute">
 			<parent>head_link2</parent>
 			<child>head</child>
-			<pose frame="">1.1102230246251558e-18 -1.942890293094024e-18 0.02600000000000005 0 0 0</pose>
+			<pose frame="">-2.4611174625075937e-05 0.0016286099831791603 -0.16772598298431488 0 0 0</pose>
 			<axis>
 				<xyz>0.0 -1.4643661852621273e-18 1.0</xyz>
 				<limit>

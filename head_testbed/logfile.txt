@@ -4,7 +4,6 @@ exporting stl of head
 Body: base
 COM: base -0.06080417979969454 0.23707160382271594 -5.182768598878378
 exporting stl of base
-Body: head
 Body: head_link1
 COM: head_link1 4.557263000984424e-17 -1.7659394128814644e-16 2.6000000000000045
 exporting stl of head_link1
@@ -22,4 +21,4 @@ Joint: EXPORT_head_axis1
 Joint: EXPORT_head_axis2
 	parent: head_link2
 	child: head
-	pos: 1.1102230246251558e-16	-1.942890293094024e-16	2.600000000000005
+	pos: -0.0024611174625075935	0.16286099831791603	-16.772598298431486
