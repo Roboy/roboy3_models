@@ -1,0 +1,25 @@
+Body: base
+COM: base -0.05796049295419178 0.1866653112677929 -5.182768927206124
+exporting stl of base
+Body: head
+COM: head 0.0024611174625077045 -0.16286099831791623 19.37259829843149
+exporting stl of head
+Body: head
+Body: head_link1
+COM: head_link1 4.557263000984424e-17 -1.7659394128814644e-16 2.6000000000000045
+exporting stl of head_link1
+Body: head_link2
+COM: head_link2 3.635750664681658e-17 -2.9851655039434397e-16 2.6000000000000054
+exporting stl of head_link2
+Joint: EXPORT_head_axis0
+	parent: base
+	child: head_link1
+	pos: 6.544967245267135e-17	-1.769508802125596e-17	4.440892098500626e-16
+Joint: EXPORT_head_axis1
+	parent: head_link1
+	child: head_link2
+	pos: 7.4664795815699e-17	1.0422752108494158e-16	-4.440892098500626e-16
+Joint: EXPORT_head_axis2
+	parent: head_link2
+	child: head
+	pos: 1.1102230246251558e-16	-1.942890293094024e-16	2.600000000000005
