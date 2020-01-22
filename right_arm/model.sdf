@@ -1,4 +1,3 @@
-<?xml version="1.0" ?>
 <sdf version="1.6">
 	<model name="right_arm">
 		<link name="torso">
@@ -19,7 +18,7 @@
 			<collision name="torso_collision">
 				<geometry>
 					<mesh>
-						<uri>model://right_arm/meshes/CAD/torso.stl</uri>
+						<uri>model://right_arm/meshes/collisions/torso.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -27,7 +26,7 @@
 			<visual name="torso_visual">
 				<geometry>
 					<mesh>
-						<uri>model://right_arm/meshes/CAD/torso.stl</uri>
+						<uri>model://right_arm/meshes/visuals/torso.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -51,7 +50,7 @@
 			<collision name="upper_arm_collision">
 				<geometry>
 					<mesh>
-						<uri>model://right_arm/meshes/CAD/upper_arm.stl</uri>
+						<uri>model://right_arm/meshes/collisions/upper_arm.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -59,7 +58,7 @@
 			<visual name="upper_arm_visual">
 				<geometry>
 					<mesh>
-						<uri>model://right_arm/meshes/CAD/upper_arm.stl</uri>
+						<uri>model://right_arm/meshes/visuals/upper_arm.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -83,7 +82,7 @@
 			<collision name="elbow_collision">
 				<geometry>
 					<mesh>
-						<uri>model://right_arm/meshes/CAD/elbow.stl</uri>
+						<uri>model://right_arm/meshes/collisions/elbow.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -91,7 +90,7 @@
 			<visual name="elbow_visual">
 				<geometry>
 					<mesh>
-						<uri>model://right_arm/meshes/CAD/elbow.stl</uri>
+						<uri>model://right_arm/meshes/visuals/elbow.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -115,7 +114,7 @@
 			<collision name="lower_arm_collision">
 				<geometry>
 					<mesh>
-						<uri>model://right_arm/meshes/CAD/lower_arm.stl</uri>
+						<uri>model://right_arm/meshes/collisions/lower_arm.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -123,7 +122,7 @@
 			<visual name="lower_arm_visual">
 				<geometry>
 					<mesh>
-						<uri>model://right_arm/meshes/CAD/lower_arm.stl</uri>
+						<uri>model://right_arm/meshes/visuals/lower_arm.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -147,7 +146,7 @@
 			<collision name="shoulder_right_link1_collision">
 				<geometry>
 					<mesh>
-						<uri>model://right_arm/meshes/CAD/shoulder_right_link1.stl</uri>
+						<uri>model://right_arm/meshes/collisions/shoulder_right_link1.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -155,7 +154,7 @@
 			<visual name="shoulder_right_link1_visual">
 				<geometry>
 					<mesh>
-						<uri>model://right_arm/meshes/CAD/shoulder_right_link1.stl</uri>
+						<uri>model://right_arm/meshes/visuals/shoulder_right_link1.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -179,7 +178,7 @@
 			<collision name="shoulder_right_link2_collision">
 				<geometry>
 					<mesh>
-						<uri>model://right_arm/meshes/CAD/shoulder_right_link2.stl</uri>
+						<uri>model://right_arm/meshes/collisions/shoulder_right_link2.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -187,7 +186,7 @@
 			<visual name="shoulder_right_link2_visual">
 				<geometry>
 					<mesh>
-						<uri>model://right_arm/meshes/CAD/shoulder_right_link2.stl</uri>
+						<uri>model://right_arm/meshes/visuals/shoulder_right_link2.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -201,7 +200,7 @@
 				<xyz>-1.0 6.162975822039155e-33 -3.399077683617213e-33</xyz>
 				<limit>
 					<lower>0.0</lower>
-					<upper>0.0</upper>
+					<upper>1.0</upper>
 				</limit>
 				<use_parent_model_frame>0</use_parent_model_frame>
 			</axis>
@@ -214,7 +213,7 @@
 				<xyz>1.0 -6.162975822039155e-33 -1.1934897514720318e-14</xyz>
 				<limit>
 					<lower>0.0</lower>
-					<upper>0.0</upper>
+					<upper>1.0</upper>
 				</limit>
 				<use_parent_model_frame>0</use_parent_model_frame>
 			</axis>
@@ -258,6 +257,6 @@
 				<use_parent_model_frame>0</use_parent_model_frame>
 			</axis>
 		</joint>
-		<plugin filename="libcardsflow_gazebo_plugin.so" name="cardsflow_gazebo_plugin"/>
+		<plugin filename="libcardsflow_gazebo_plugin.so" name="cardsflow_gazebo_plugin" />
 	</model>
 </sdf>
