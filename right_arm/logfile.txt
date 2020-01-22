@@ -1,5 +1,5 @@
 Body: torso
-COM: torso -23.56530180907599 0.037816383538856 -5.630398301932177
+COM: torso -23.566134324505718 0.04095113515327667 -5.636108580872436
 exporting stl of torso
 Body: upper_arm
 COM: upper_arm -46.06423102753464 -0.05403633331535517 -21.058376160501762
@@ -21,9 +21,9 @@ Joint: EXPORT_elbow_joint_0
 	child: elbow
 	pos: 0.694256393906727	-3.025348313497185	4.3639079257841615
 Joint: EXPORT_elbow_joint_1
-	parent: lower_arm
-	child: elbow
-	pos: 0.46961173296592307	-3.025348313497185	-4.536092074215858
+	parent: elbow
+	child: lower_arm
+	pos: 0.2966920086367608	0.2717087142900552	15.760471502682883
 Joint: EXPORT_shoulder_right_axis0
 	parent: torso
 	child: shoulder_right_link1
