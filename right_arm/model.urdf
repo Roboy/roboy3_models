@@ -4,35 +4,35 @@
     <child link="elbow" />
     <origin rpy="0 0 0" xyz="1.1700e-03 -2.1000e-04 -3.1194e-01" />
     <axis xyz="-1  0  0" />
-    <limit effort="0.0" lower="0.0" upper="1.0" velocity="0.0" />
+    <limit effort="1.0" lower="0.0" upper="1.0" velocity="10.0" />
   </joint>
   <joint name="elbow_joint_1" type="revolute">
     <parent link="elbow" />
     <child link="lower_arm" />
     <origin rpy="0 0 0" xyz="-0.00177  0      -0.089" />
     <axis xyz="1 0 0" />
-    <limit effort="0.0" lower="0.0" upper="1.0" velocity="0.0" />
+    <limit effort="1.0" lower="0.0" upper="1.0" velocity="10.0" />
   </joint>
   <joint name="shoulder_right_axis0" type="revolute">
     <parent link="torso" />
     <child link="shoulder_right_link1" />
     <origin rpy="0 0 0" xyz="-4.4287e-01  2.1000e-04  2.4000e-04" />
     <axis xyz="0.97437  0      -0.22495" />
-    <limit effort="0.0" lower="-3.14159265359" upper="3.14159265359" velocity="0.0" />
+    <limit effort="1.0" lower="-3.14159265359" upper="3.14159265359" velocity="10.0" />
   </joint>
   <joint name="shoulder_right_axis1" type="revolute">
     <parent link="shoulder_right_link1" />
     <child link="shoulder_right_link2" />
     <origin rpy="0 0 0" xyz="0 0 0" />
     <axis xyz="0 -1  0" />
-    <limit effort="0.0" lower="-3.14159265359" upper="3.14159265359" velocity="0.0" />
+    <limit effort="1.0" lower="-3.14159265359" upper="3.14159265359" velocity="10.0" />
   </joint>
   <joint name="shoulder_right_axis2" type="revolute">
     <parent link="shoulder_right_link2" />
     <child link="upper_arm" />
     <origin rpy="0 0 0" xyz="0 0 0" />
     <axis xyz="-0.22495  0      -0.97437" />
-    <limit effort="0.0" lower="-3.14159265359" upper="3.14159265359" velocity="0.0" />
+    <limit effort="1.0" lower="-3.14159265359" upper="3.14159265359" velocity="10.0" />
   </joint>
   <link name="torso">
     <inertial>
@@ -148,4 +148,18 @@
       </geometry>
     </visual>
   </link>
+
+    <joint name="sensor_link_joint" type="fixed">
+          <origin xyz="0 0 0" rpy="1.57 0 1.57"/>
+          <parent link="lower_arm"/>
+          <child link="sensor_link"/>
+  </joint>
+
+  <link name="sensor_link"/>
+   <link name="world" />
+    <joint name="world_joint" type="fixed">
+            <parent link="world" />
+            <child link = "torso" />
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+    </joint>
 </robot>
