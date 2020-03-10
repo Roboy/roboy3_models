@@ -130,7 +130,7 @@
     <child link="lowerarm_left" />
     <origin rpy="0 0 0" xyz="-0.0015  0     -0.09" />
     <axis xyz="-1  0  0" />
-    <limit effort="1.0" lower="0.0" upper="1.0471975512" velocity="10.0" />
+    <limit effort="1.0" lower="-1.57079632679" upper="0.0" velocity="10.0" />
   </joint>
   <link name="hand_right">
     <inertial>
