@@ -7,3 +7,9 @@ shoulder_left:
 shoulder_right:
   motor_ids: [8,9,10,11,12,13,14,15,18,19]
   use_motor_config: true
+wrist_left:
+  motor_ids: [26,27,28,29,30,31]
+  use_motor_config: true
+wrist_right:
+  motor_ids: [36,37,38,39,40,41]
+  use_motor_config: true
