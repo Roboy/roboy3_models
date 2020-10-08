@@ -13,3 +13,9 @@ wrist_left:
 wrist_right:
   motor_ids: [32,33,34,35,36,37]
   use_motor_config: true
+hand_right:
+  motor_ids: [42,43,44,45]
+  use_motor_config: true
+hand_left:
+  motor_ids: [38,39,40,41]
+  use_motor_config: true
