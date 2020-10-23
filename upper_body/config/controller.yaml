@@ -52,11 +52,11 @@ wrist_right_axis2:
   joint: wrist_right_axis2
   type: cardsflow/kindyn/CableLengthController
 wrist_left_axis0:
-  joint: wrist_right_axis0
+  joint: wrist_left_axis0
   type: cardsflow/kindyn/CableLengthController
 wrist_left_axis1:
-  joint: wrist_right_axis1
+  joint: wrist_left_axis1
   type: cardsflow/kindyn/CableLengthController
 wrist_left_axis2:
-  joint: wrist_right_axis2
+  joint: wrist_left_axis2
   type: cardsflow/kindyn/CableLengthController

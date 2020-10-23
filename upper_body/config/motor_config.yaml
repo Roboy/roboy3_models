@@ -19,3 +19,5 @@ hand_right:
 hand_left:
   motor_ids: [38,39,40,41]
   use_motor_config: true
+spine:
+  motor_ids: [46,47,48,49,50,51]
