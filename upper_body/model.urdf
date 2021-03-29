@@ -109,14 +109,14 @@
     <child link="lowerarm_right" />
     <origin rpy="0 0 0" xyz="0.00042  0      -0.09" />
     <axis xyz="1 0 0" />
-    <limit effort="1.0" lower="-1.0079632679" upper="0.0" velocity="10.0" />
+    <limit effort="1.0" lower="0.0" upper="0.0" velocity="10.0" />
   </joint>
   <joint name="elbow_right_axis0" type="revolute">
     <parent link="upperarm_right" />
     <child link="elbow_right" />
     <origin rpy="0 0 0" xyz="-0.00106  0      -0.31208" />
     <axis xyz="-1  0  0" />
-    <limit effort="1.0" lower="0.0" upper="1.0217304764" velocity="10.0" />
+    <limit effort="1.0" lower="0.0" upper="0.8217304764" velocity="10.0" />
   </joint>
   <joint name="elbow_left_axis0" type="revolute">
     <parent link="upperarm_left" />
