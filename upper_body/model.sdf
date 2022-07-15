@@ -193,7 +193,7 @@
 				</geometry>
 			</visual>
 		</link>
-		<link name="shoulder_link1_right">
+		<link name="shoulder_right_link1">
 			<self_collide>false</self_collide>
 			<pose frame="">-0.2060530384599503 0.007199999938235944 0.4812847296953862 0.0 -0.0 0.0</pose>
 			<inertial>
@@ -208,24 +208,24 @@
 					<izz>0.00560301206595923</izz>
 				</inertia>
 			</inertial>
-			<collision name="shoulder_link1_right_collision">
+			<collision name="shoulder_right_link1_collision">
 				<geometry>
 					<mesh>
-						<uri>model://upper_body/meshes/CAD/shoulder_link1_right.stl</uri>
+						<uri>model://upper_body/meshes/CAD/shoulder_right_link1.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
 			</collision>
-			<visual name="shoulder_link1_right_visual">
+			<visual name="shoulder_right_link1_visual">
 				<geometry>
 					<mesh>
-						<uri>model://upper_body/meshes/CAD/shoulder_link1_right.stl</uri>
+						<uri>model://upper_body/meshes/CAD/shoulder_right_link1.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
 			</visual>
 		</link>
-		<link name="shoulder_link2_right">
+		<link name="shoulder_right_link2">
 			<self_collide>false</self_collide>
 			<pose frame="">-0.21355303845995133 -0.007800000061764042 0.48128472969538605 0.0 -0.0 0.0</pose>
 			<inertial>
@@ -240,18 +240,18 @@
 					<izz>0.006018120468071959</izz>
 				</inertia>
 			</inertial>
-			<collision name="shoulder_link2_right_collision">
+			<collision name="shoulder_right_link2_collision">
 				<geometry>
 					<mesh>
-						<uri>model://upper_body/meshes/CAD/shoulder_link2_right.stl</uri>
+						<uri>model://upper_body/meshes/CAD/shoulder_right_link2.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
 			</collision>
-			<visual name="shoulder_link2_right_visual">
+			<visual name="shoulder_right_link2_visual">
 				<geometry>
 					<mesh>
-						<uri>model://upper_body/meshes/CAD/shoulder_link2_right.stl</uri>
+						<uri>model://upper_body/meshes/CAD/shoulder_right_link2.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -321,7 +321,7 @@
 				</geometry>
 			</visual>
 		</link>
-		<link name="shoulder_link1_left">
+		<link name="shoulder_left_link1">
 			<self_collide>false</self_collide>
 			<pose frame="">0.20605303845995127 0.007199999938235946 0.481284729695386 0.0 -0.0 0.0</pose>
 			<inertial>
@@ -336,24 +336,24 @@
 					<izz>0.0056030120659592755</izz>
 				</inertia>
 			</inertial>
-			<collision name="shoulder_link1_left_collision">
+			<collision name="shoulder_left_link1_collision">
 				<geometry>
 					<mesh>
-						<uri>model://upper_body/meshes/CAD/shoulder_link1_left.stl</uri>
+						<uri>model://upper_body/meshes/CAD/shoulder_left_link1.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
 			</collision>
-			<visual name="shoulder_link1_left_visual">
+			<visual name="shoulder_left_link1_visual">
 				<geometry>
 					<mesh>
-						<uri>model://upper_body/meshes/CAD/shoulder_link1_left.stl</uri>
+						<uri>model://upper_body/meshes/CAD/shoulder_left_link1.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
 			</visual>
 		</link>
-		<link name="shoulder_link2_left">
+		<link name="shoulder_left_link2">
 			<self_collide>false</self_collide>
 			<pose frame="">0.2135530384599511 -0.007800000061764059 0.481284729695386 0.0 -0.0 0.0</pose>
 			<inertial>
@@ -368,18 +368,18 @@
 					<izz>0.00601812046807196</izz>
 				</inertia>
 			</inertial>
-			<collision name="shoulder_link2_left_collision">
+			<collision name="shoulder_left_link2_collision">
 				<geometry>
 					<mesh>
-						<uri>model://upper_body/meshes/CAD/shoulder_link2_left.stl</uri>
+						<uri>model://upper_body/meshes/CAD/shoulder_left_link2.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
 			</collision>
-			<visual name="shoulder_link2_left_visual">
+			<visual name="shoulder_left_link2_visual">
 				<geometry>
 					<mesh>
-						<uri>model://upper_body/meshes/CAD/shoulder_link2_left.stl</uri>
+						<uri>model://upper_body/meshes/CAD/shoulder_left_link2.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -477,7 +477,7 @@
 		</joint>
 		<joint name="shoulder_left_axis0" type="revolute">
 			<parent>torso</parent>
-			<child>shoulder_link1_left</child>
+			<child>shoulder_left_link1</child>
 			<pose frame="">0.003749999999999929 -0.007500000000000009 0.00375 0 0 0</pose>
 			<axis>
 				<xyz>-1.0 3.6718754185775985e-18 -1.3800689865091197e-15</xyz>
@@ -489,7 +489,7 @@
 			</axis>
 		</joint>
 		<joint name="shoulder_left_axis2" type="revolute">
-			<parent>shoulder_link2_left</parent>
+			<parent>shoulder_left_link2</parent>
 			<child>upperarm_left</child>
 			<pose frame="">-0.011229183439700918 -0.021779896194868777 0.18886492305624658 0 0 0</pose>
 			<axis>
@@ -503,7 +503,7 @@
 		</joint>
 		<joint name="shoulder_right_axis0" type="revolute">
 			<parent>torso</parent>
-			<child>shoulder_link1_right</child>
+			<child>shoulder_right_link1</child>
 			<pose frame="">-0.003750000000000959 -0.007499999999999998 0.003749999999999787 0 0 0</pose>
 			<axis>
 				<xyz>1.0 -2.8134622404579915e-17 -1.3122219360502844e-15</xyz>
@@ -515,7 +515,7 @@
 			</axis>
 		</joint>
 		<joint name="shoulder_right_axis2" type="revolute">
-			<parent>shoulder_link2_right</parent>
+			<parent>shoulder_right_link2</parent>
 			<child>upperarm_right</child>
 			<pose frame="">0.011229161032645684 -0.02177994716503367 0.18886512505659703 0 0 0</pose>
 			<axis>

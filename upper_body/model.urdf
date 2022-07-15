@@ -1,0 +1,339 @@
+<?xml version="1.0" ?>
+<robot name="upper_body">
+  <joint name="upper_body__neck_axis0" type="fixed">
+    <parent link="upper_body__torso"/>
+    <child link="upper_body__neck_link1"/>
+    <origin rpy="0 0 0" xyz="0      0      0.62575"/>
+    <axis xyz="-1  0  0"/>
+    <limit effort="0.0" lower="0.0" upper="0.0" velocity="0.0"/>
+  </joint>
+  <joint name="upper_body__neck_axis2" type="fixed">
+    <parent link="upper_body__neck_link2"/>
+    <child link="upper_body__head"/>
+    <origin rpy="0 0 0" xyz="0      -0.02     0.62575"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="0.0" lower="0.0" upper="0.0" velocity="0.0"/>
+  </joint>
+  <joint name="upper_body__shoulder_left_axis0" type="fixed">
+    <parent link="upper_body__torso"/>
+    <child link="upper_body__shoulder_left_link1"/>
+    <origin rpy="0 0 0" xyz="2.0980e-01 -2.9000e-04  4.8503e-01"/>
+    <axis xyz="-1  0  0"/>
+    <limit effort="0.0" lower="0.0" upper="0.0" velocity="0.0"/>
+  </joint>
+  <joint name="upper_body__shoulder_left_axis2" type="fixed">
+    <parent link="upper_body__shoulder_left_link2"/>
+    <child link="upper_body__upperarm_left"/>
+    <origin rpy="0 0 0" xyz="0.2098  -0.02029  0.48503"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="0.0" lower="0.0" upper="0.0" velocity="0.0"/>
+  </joint>
+  <joint name="upper_body__shoulder_right_axis0" type="fixed">
+    <parent link="upper_body__torso"/>
+    <child link="upper_body__shoulder_right_link1"/>
+    <origin rpy="0 0 0" xyz="-2.0980e-01 -2.9000e-04  4.8503e-01"/>
+    <axis xyz="1 0 0"/>
+    <limit effort="0.0" lower="0.0" upper="0.0" velocity="0.0"/>
+  </joint>
+  <joint name="upper_body__shoulder_right_axis2" type="fixed">
+    <parent link="upper_body__shoulder_right_link2"/>
+    <child link="upper_body__upperarm_right"/>
+    <origin rpy="0 0 0" xyz="-0.2098  -0.02029  0.48503"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="0.0" lower="0.0" upper="0.0" velocity="0.0"/>
+  </joint>
+  <joint name="upper_body__elbow_right_axis0" type="fixed">
+    <parent link="upper_body__upperarm_right"/>
+    <child link="upper_body__elbow_right"/>
+    <origin rpy="0 0 0" xyz="-0.012   0.02   -0.3167"/>
+    <axis xyz="1 0 0"/>
+    <limit effort="0.0" lower="0.0" upper="0.0" velocity="0.0"/>
+  </joint>
+  <joint name="upper_body__elbow_right_axis1" type="fixed">
+    <parent link="upper_body__elbow_right"/>
+    <child link="upper_body__lowerarm_right"/>
+    <origin rpy="0 0 0" xyz="0.003  0    -0.09"/>
+    <axis xyz="-1  0  0"/>
+    <limit effort="0.0" lower="0.0" upper="0.0" velocity="0.0"/>
+  </joint>
+  <joint name="upper_body__elbow_left_axis0" type="fixed">
+    <parent link="upper_body__upperarm_left"/>
+    <child link="upper_body__elbow_left"/>
+    <origin rpy="0 0 0" xyz="0.012   0.02   -0.3167"/>
+    <axis xyz="1 0 0"/>
+    <limit effort="0.0" lower="0.0" upper="0.0" velocity="0.0"/>
+  </joint>
+  <joint name="upper_body__elbow_left_axis1" type="fixed">
+    <parent link="upper_body__elbow_left"/>
+    <child link="upper_body__lowerarm_left"/>
+    <origin rpy="0 0 0" xyz="-0.003  0    -0.09"/>
+    <axis xyz="-1  0  0"/>
+    <limit effort="0.0" lower="0.0" upper="0.0" velocity="0.0"/>
+  </joint>
+  <link name="upper_body__torso">
+    <inertial>
+      <mass value="25.484532049638535"/>
+      <origin rpy="0 0 0" xyz="2.3000e-04 1.0600e-02 4.3137e-01"/>
+      <inertia ixx="5.258835582254277" ixy="0.00011709544750634677" ixz="-0.00334802333308169" iyy="5.467803837169585" iyz="-0.12072489827759955" izz="0.533803340431137"/>
+    </inertial>
+    <collision name="upper_body__torso_collision">
+      <origin rpy="0 0 0" xyz="2.3000e-04 1.0600e-02 4.3137e-01"/>
+      <geometry>
+        <mesh filename="package://roboy3_models/upper_body/meshes/CAD/torso.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <visual name="upper_body__torso_visual">
+      <origin rpy="0 0 0" xyz="2.3000e-04 1.0600e-02 4.3137e-01"/>
+      <geometry>
+        <mesh filename="package://roboy3_models/upper_body/meshes/CAD/torso.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="upper_body__lowerarm_right">
+    <inertial>
+      <mass value="1.0074638997705314"/>
+      <origin rpy="0 0 0" xyz="-0.0004  -0.00091 -0.21276"/>
+      <inertia ixx="0.03147609850046257" ixy="-0.0002711089785375398" ixz="-0.029796901932204578" iyy="0.0797708396876748" iyz="-6.28652323063764e-05" izz="0.04941236986443757"/>
+    </inertial>
+    <collision name="upper_body__lowerarm_right_collision">
+      <origin rpy="0 0 0" xyz="-0.0004  -0.00091 -0.21276"/>
+      <geometry>
+        <mesh filename="package://roboy3_models/upper_body/meshes/CAD/lowerarm_right.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <visual name="upper_body__lowerarm_right_visual">
+      <origin rpy="0 0 0" xyz="-0.0004  -0.00091 -0.21276"/>
+      <geometry>
+        <mesh filename="package://roboy3_models/upper_body/meshes/CAD/lowerarm_right.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="upper_body__lowerarm_left">
+    <inertial>
+      <mass value="1.0074631712298445"/>
+      <origin rpy="0 0 0" xyz="0.0004  -0.00091 -0.21276"/>
+      <inertia ixx="0.03147609940082702" ixy="0.00027110633423701156" ixz="0.029796916712719362" iyy="0.07977080588923677" iyz="-6.286623892047694e-05" izz="0.04941233306547431"/>
+    </inertial>
+    <collision name="upper_body__lowerarm_left_collision">
+      <origin rpy="0 0 0" xyz="0.0004  -0.00091 -0.21276"/>
+      <geometry>
+        <mesh filename="package://roboy3_models/upper_body/meshes/CAD/lowerarm_left.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <visual name="upper_body__lowerarm_left_visual">
+      <origin rpy="0 0 0" xyz="0.0004  -0.00091 -0.21276"/>
+      <geometry>
+        <mesh filename="package://roboy3_models/upper_body/meshes/CAD/lowerarm_left.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="upper_body__head">
+    <inertial>
+      <mass value="33.92015206374685"/>
+      <origin rpy="0 0 0" xyz="7.0000e-05 2.7310e-02 1.6829e-01"/>
+      <inertia ixx="21.754286099082787" ixy="-0.0005624018399707333" ixz="-0.0022656002668038464" iyy="21.695452750273788" iyz="-0.22155756473394905" izz="0.32775596444116145"/>
+    </inertial>
+    <collision name="upper_body__head_collision">
+      <origin rpy="0 0 0" xyz="7.0000e-05 2.7310e-02 1.6829e-01"/>
+      <geometry>
+        <mesh filename="package://roboy3_models/upper_body/meshes/CAD/head.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <visual name="upper_body__head_visual">
+      <origin rpy="0 0 0" xyz="7.0000e-05 2.7310e-02 1.6829e-01"/>
+      <geometry>
+        <mesh filename="package://roboy3_models/upper_body/meshes/CAD/head.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="upper_body__elbow_right">
+    <inertial>
+      <mass value="0.027833326423345923"/>
+      <origin rpy="0 0 0" xyz="0.00488  0.03745 -0.04449"/>
+      <inertia ixx="0.00046936798100956297" ixy="0.0002242971847618781" ixz="0.0007476129489564115" iyy="0.0017407566471222783" iyz="-0.00012795789058165995" izz="0.001353174770056334"/>
+    </inertial>
+    <collision name="upper_body__elbow_right_collision">
+      <origin rpy="0 0 0" xyz="0.00488  0.03745 -0.04449"/>
+      <geometry>
+        <mesh filename="package://roboy3_models/upper_body/meshes/CAD/elbow_right.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <visual name="upper_body__elbow_right_visual">
+      <origin rpy="0 0 0" xyz="0.00488  0.03745 -0.04449"/>
+      <geometry>
+        <mesh filename="package://roboy3_models/upper_body/meshes/CAD/elbow_right.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="upper_body__upperarm_right">
+    <inertial>
+      <mass value="0.47897938041859955"/>
+      <origin rpy="0 0 0" xyz="-0.01122  0.02178 -0.18886"/>
+      <inertia ixx="0.047739785217205295" ixy="0.0001599943964407516" ixz="0.03134774036779062" iyy="0.07049498506434859" iyz="-0.00020946246956613274" izz="0.024477263936243224"/>
+    </inertial>
+    <collision name="upper_body__upperarm_right_collision">
+      <origin rpy="0 0 0" xyz="-0.01122  0.02178 -0.18886"/>
+      <geometry>
+        <mesh filename="package://roboy3_models/upper_body/meshes/CAD/upperarm_right.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <visual name="upper_body__upperarm_right_visual">
+      <origin rpy="0 0 0" xyz="-0.01122  0.02178 -0.18886"/>
+      <geometry>
+        <mesh filename="package://roboy3_models/upper_body/meshes/CAD/upperarm_right.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="upper_body__shoulder_right_link1">
+    <inertial>
+      <mass value="0.13152801243029266"/>
+      <origin rpy="0 0 0" xyz="0.00375  0.0075  -0.00375"/>
+      <inertia ixx="0.030485104811193924" ixy="0.00019548246589014734" ixz="0.013041807175836773" iyy="0.03606823247246791" iyz="-0.000456127340257625" izz="0.00560301206595923"/>
+    </inertial>
+    <collision name="upper_body__shoulder_right_link1_collision">
+      <origin rpy="0 0 0" xyz="0.00375  0.0075  -0.00375"/>
+      <geometry>
+        <mesh filename="package://roboy3_models/upper_body/meshes/CAD/shoulder_right_link1.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <visual name="upper_body__shoulder_right_link1_visual">
+      <origin rpy="0 0 0" xyz="0.00375  0.0075  -0.00375"/>
+      <geometry>
+        <mesh filename="package://roboy3_models/upper_body/meshes/CAD/shoulder_right_link1.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="upper_body__shoulder_right_link2">
+    <inertial>
+      <mass value="0.1315280124302925"/>
+      <origin rpy="0 0 0" xyz="-0.21355 -0.0078   0.48128"/>
+      <inertia ixx="0.030486288563549433" ixy="-0.0002187381219558529" ixz="0.013520274580510552" iyy="0.036482157122224974" iyz="0.0004941088024231829" izz="0.006018120468071959"/>
+    </inertial>
+    <collision name="upper_body__shoulder_right_link2_collision">
+      <origin rpy="0 0 0" xyz="-0.21355 -0.0078   0.48128"/>
+      <geometry>
+        <mesh filename="package://roboy3_models/upper_body/meshes/CAD/shoulder_right_link2.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <visual name="upper_body__shoulder_right_link2_visual">
+      <origin rpy="0 0 0" xyz="-0.21355 -0.0078   0.48128"/>
+      <geometry>
+        <mesh filename="package://roboy3_models/upper_body/meshes/CAD/shoulder_right_link2.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="upper_body__elbow_left">
+    <inertial>
+      <mass value="0.027833366422315858"/>
+      <origin rpy="0 0 0" xyz="-0.00488  0.03745 -0.04449"/>
+      <inertia ixx="0.000469368745299957" ixy="-0.00022429711641259515" ixz="-0.0007476143495157416" iyy="0.0017407597298930942" iyz="-0.0001279578522344028" izz="0.0013531769418158295"/>
+    </inertial>
+    <collision name="upper_body__elbow_left_collision">
+      <origin rpy="0 0 0" xyz="-0.00488  0.03745 -0.04449"/>
+      <geometry>
+        <mesh filename="package://roboy3_models/upper_body/meshes/CAD/elbow_left.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <visual name="upper_body__elbow_left_visual">
+      <origin rpy="0 0 0" xyz="-0.00488  0.03745 -0.04449"/>
+      <geometry>
+        <mesh filename="package://roboy3_models/upper_body/meshes/CAD/elbow_left.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="upper_body__upperarm_left">
+    <inertial>
+      <mass value="0.4789794871685731"/>
+      <origin rpy="0 0 0" xyz="0.01122  0.02178 -0.18886"/>
+      <inertia ixx="0.047739844645411804" ixy="-0.00015998892477739812" ixz="-0.031347771480737675" iyy="0.07049505412035494" iyz="-0.00020945579244281882" izz="0.02447727369058352"/>
+    </inertial>
+    <collision name="upper_body__upperarm_left_collision">
+      <origin rpy="0 0 0" xyz="0.01122  0.02178 -0.18886"/>
+      <geometry>
+        <mesh filename="package://roboy3_models/upper_body/meshes/CAD/upperarm_left.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <visual name="upper_body__upperarm_left_visual">
+      <origin rpy="0 0 0" xyz="0.01122  0.02178 -0.18886"/>
+      <geometry>
+        <mesh filename="package://roboy3_models/upper_body/meshes/CAD/upperarm_left.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="upper_body__shoulder_left_link1">
+    <inertial>
+      <mass value="0.13152801243029272"/>
+      <origin rpy="0 0 0" xyz="-0.00375  0.0075  -0.00375"/>
+      <inertia ixx="0.030485104811193892" ixy="-0.00019548246589014729" ixz="-0.013041807175836828" iyy="0.03606823247246791" iyz="-0.000456127340257625" izz="0.0056030120659592755"/>
+    </inertial>
+    <collision name="upper_body__shoulder_left_link1_collision">
+      <origin rpy="0 0 0" xyz="-0.00375  0.0075  -0.00375"/>
+      <geometry>
+        <mesh filename="package://roboy3_models/upper_body/meshes/CAD/shoulder_left_link1.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <visual name="upper_body__shoulder_left_link1_visual">
+      <origin rpy="0 0 0" xyz="-0.00375  0.0075  -0.00375"/>
+      <geometry>
+        <mesh filename="package://roboy3_models/upper_body/meshes/CAD/shoulder_left_link1.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="upper_body__shoulder_left_link2">
+    <inertial>
+      <mass value="0.13152801243029277"/>
+      <origin rpy="0 0 0" xyz="0.21355 -0.0078   0.48128"/>
+      <inertia ixx="0.03048628856354949" ixy="0.00021873812195585343" ixz="-0.013520274580510562" iyy="0.03648215712222504" iyz="0.0004941088024231848" izz="0.00601812046807196"/>
+    </inertial>
+    <collision name="upper_body__shoulder_left_link2_collision">
+      <origin rpy="0 0 0" xyz="0.21355 -0.0078   0.48128"/>
+      <geometry>
+        <mesh filename="package://roboy3_models/upper_body/meshes/CAD/shoulder_left_link2.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <visual name="upper_body__shoulder_left_link2_visual">
+      <origin rpy="0 0 0" xyz="0.21355 -0.0078   0.48128"/>
+      <geometry>
+        <mesh filename="package://roboy3_models/upper_body/meshes/CAD/shoulder_left_link2.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="upper_body__neck_link1">
+    <inertial>
+      <mass value="0.1315280124302927"/>
+      <origin rpy="0 0 0" xyz="0.00375  0.0075  -0.00375"/>
+      <inertia ixx="0.050905278430385094" ixy="-3.349333335917957e-06" ixz="-0.0003086387020970418" iyy="0.05090527843040061" iyz="-0.0006139280695749516" izz="2.1044481983688906e-05"/>
+    </inertial>
+    <collision name="upper_body__neck_link1_collision">
+      <origin rpy="0 0 0" xyz="0.00375  0.0075  -0.00375"/>
+      <geometry>
+        <mesh filename="package://roboy3_models/upper_body/meshes/CAD/neck_link1.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <visual name="upper_body__neck_link1_visual">
+      <origin rpy="0 0 0" xyz="0.00375  0.0075  -0.00375"/>
+      <geometry>
+        <mesh filename="package://roboy3_models/upper_body/meshes/CAD/neck_link1.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="upper_body__neck_link2">
+    <inertial>
+      <mass value="0.13152801243029263"/>
+      <origin rpy="0 0 0" xyz="-0.00375 -0.0075   0.622"/>
+      <inertia ixx="0.05090527843040566" ixy="-3.3493333307485495e-06" ixz="0.0003086387012397938" iyy="0.05090527843039015" iyz="0.000613928070432214" izz="2.1044481994015745e-05"/>
+    </inertial>
+    <collision name="upper_body__neck_link2_collision">
+      <origin rpy="0 0 0" xyz="-0.00375 -0.0075   0.622"/>
+      <geometry>
+        <mesh filename="package://roboy3_models/upper_body/meshes/CAD/neck_link2.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <visual name="upper_body__neck_link2_visual">
+      <origin rpy="0 0 0" xyz="-0.00375 -0.0075   0.622"/>
+      <geometry>
+        <mesh filename="package://roboy3_models/upper_body/meshes/CAD/neck_link2.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+  </link>
+</robot>
