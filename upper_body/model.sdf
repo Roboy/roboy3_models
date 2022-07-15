@@ -73,10 +73,10 @@
 				<mass>1.0074631712298445</mass>
 				<inertia>
 					<ixx>0.03147609940082702</ixx>
-					<ixy>0.00027110633423701156</ixy>
+					<ixy>0.0002711063342370113</ixy>
 					<ixz>0.029796916712719362</ixz>
 					<iyy>0.07977080588923677</iyy>
-					<iyz>-6.286623892047694e-05</iyz>
+					<iyz>-6.286623892047672e-05</iyz>
 					<izz>0.04941233306547431</izz>
 				</inertia>
 			</inertial>
@@ -99,17 +99,17 @@
 		</link>
 		<link name="head">
 			<self_collide>false</self_collide>
-			<pose frame="">7.68807224659997e-05 0.007311389102102275 0.7940477750159954 0.0 -0.0 0.0</pose>
+			<pose frame="">7.688070547429513e-05 0.006851130830040478 0.7940671399896186 0.0 -0.0 0.0</pose>
 			<inertial>
 				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
-				<mass>33.92015206374685</mass>
+				<mass>33.92015199425921</mass>
 				<inertia>
-					<ixx>21.754286099082787</ixx>
-					<ixy>-0.0005624018399707333</ixy>
-					<ixz>-0.0022656002668038464</ixz>
-					<iyy>21.695452750273788</iyy>
-					<iyz>-0.22155756473394905</iyz>
-					<izz>0.32775596444116145</izz>
+					<ixx>21.75510812168486</ixx>
+					<ixy>-0.0005606665168605437</ixy>
+					<ixz>-0.002267135508357556</ixz>
+					<iyy>21.69663072025339</iyy>
+					<iyz>-0.2092129833464968</iyz>
+					<izz>0.32740001700442967</izz>
 				</inertia>
 			</inertial>
 			<collision name="head_collision">
@@ -193,7 +193,7 @@
 				</geometry>
 			</visual>
 		</link>
-		<link name="shoulder_link1_right">
+		<link name="shoulder_right_link1">
 			<self_collide>false</self_collide>
 			<pose frame="">-0.2060530384599503 0.007199999938235944 0.4812847296953862 0.0 -0.0 0.0</pose>
 			<inertial>
@@ -208,24 +208,24 @@
 					<izz>0.00560301206595923</izz>
 				</inertia>
 			</inertial>
-			<collision name="shoulder_link1_right_collision">
+			<collision name="shoulder_right_link1_collision">
 				<geometry>
 					<mesh>
-						<uri>model://upper_body/meshes/CAD/shoulder_link1_right.stl</uri>
+						<uri>model://upper_body/meshes/CAD/shoulder_right_link1.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
 			</collision>
-			<visual name="shoulder_link1_right_visual">
+			<visual name="shoulder_right_link1_visual">
 				<geometry>
 					<mesh>
-						<uri>model://upper_body/meshes/CAD/shoulder_link1_right.stl</uri>
+						<uri>model://upper_body/meshes/CAD/shoulder_right_link1.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
 			</visual>
 		</link>
-		<link name="shoulder_link2_right">
+		<link name="shoulder_right_link2">
 			<self_collide>false</self_collide>
 			<pose frame="">-0.21355303845995133 -0.007800000061764042 0.48128472969538605 0.0 -0.0 0.0</pose>
 			<inertial>
@@ -240,18 +240,18 @@
 					<izz>0.006018120468071959</izz>
 				</inertia>
 			</inertial>
-			<collision name="shoulder_link2_right_collision">
+			<collision name="shoulder_right_link2_collision">
 				<geometry>
 					<mesh>
-						<uri>model://upper_body/meshes/CAD/shoulder_link2_right.stl</uri>
+						<uri>model://upper_body/meshes/CAD/shoulder_right_link2.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
 			</collision>
-			<visual name="shoulder_link2_right_visual">
+			<visual name="shoulder_right_link2_visual">
 				<geometry>
 					<mesh>
-						<uri>model://upper_body/meshes/CAD/shoulder_link2_right.stl</uri>
+						<uri>model://upper_body/meshes/CAD/shoulder_right_link2.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -321,7 +321,7 @@
 				</geometry>
 			</visual>
 		</link>
-		<link name="shoulder_link1_left">
+		<link name="shoulder_left_link1">
 			<self_collide>false</self_collide>
 			<pose frame="">0.20605303845995127 0.007199999938235946 0.481284729695386 0.0 -0.0 0.0</pose>
 			<inertial>
@@ -336,24 +336,24 @@
 					<izz>0.0056030120659592755</izz>
 				</inertia>
 			</inertial>
-			<collision name="shoulder_link1_left_collision">
+			<collision name="shoulder_left_link1_collision">
 				<geometry>
 					<mesh>
-						<uri>model://upper_body/meshes/CAD/shoulder_link1_left.stl</uri>
+						<uri>model://upper_body/meshes/CAD/shoulder_left_link1.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
 			</collision>
-			<visual name="shoulder_link1_left_visual">
+			<visual name="shoulder_left_link1_visual">
 				<geometry>
 					<mesh>
-						<uri>model://upper_body/meshes/CAD/shoulder_link1_left.stl</uri>
+						<uri>model://upper_body/meshes/CAD/shoulder_left_link1.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
 			</visual>
 		</link>
-		<link name="shoulder_link2_left">
+		<link name="shoulder_left_link2">
 			<self_collide>false</self_collide>
 			<pose frame="">0.2135530384599511 -0.007800000061764059 0.481284729695386 0.0 -0.0 0.0</pose>
 			<inertial>
@@ -368,18 +368,18 @@
 					<izz>0.00601812046807196</izz>
 				</inertia>
 			</inertial>
-			<collision name="shoulder_link2_left_collision">
+			<collision name="shoulder_left_link2_collision">
 				<geometry>
 					<mesh>
-						<uri>model://upper_body/meshes/CAD/shoulder_link2_left.stl</uri>
+						<uri>model://upper_body/meshes/CAD/shoulder_left_link2.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
 			</collision>
-			<visual name="shoulder_link2_left_visual">
+			<visual name="shoulder_left_link2_visual">
 				<geometry>
 					<mesh>
-						<uri>model://upper_body/meshes/CAD/shoulder_link2_left.stl</uri>
+						<uri>model://upper_body/meshes/CAD/shoulder_left_link2.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
@@ -387,17 +387,17 @@
 		</link>
 		<link name="neck_link1">
 			<self_collide>false</self_collide>
-			<pose frame="">0.0037500000052387407 0.007499999994760666 0.622 0.0 -0.0 0.0</pose>
+			<pose frame="">0.0037499889567509334 0.007510234121302186 0.6220205346780562 0.0 -0.0 0.0</pose>
 			<inertial>
 				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
-				<mass>0.1315280124302927</mass>
+				<mass>0.13152839994763724</mass>
 				<inertia>
-					<ixx>0.050905278430385094</ixx>
-					<ixy>-3.349333335917957e-06</ixy>
-					<ixz>-0.0003086387020970418</ixz>
-					<iyy>0.05090527843040061</iyy>
-					<iyz>-0.0006139280695749516</iyz>
-					<izz>2.1044481983688906e-05</izz>
+					<ixx>0.05090880856889025</ixx>
+					<ixy>-3.349320812476213e-06</ixy>
+					<ixz>-0.00030864786125929506</ixz>
+					<iyy>0.05090879019898153</iyy>
+					<iyz>-0.0006147722468252338</iyz>
+					<izz>2.106285190859084e-05</izz>
 				</inertia>
 			</inertial>
 			<collision name="neck_link1_collision">
@@ -419,17 +419,17 @@
 		</link>
 		<link name="neck_link2">
 			<self_collide>false</self_collide>
-			<pose frame="">-0.0037499999947602143 -0.007500000005239324 0.6219999999999997 0.0 -0.0 0.0</pose>
+			<pose frame="">-0.0037499999947842766 -0.00748971712790494 0.6219795043532205 0.0 -0.0 0.0</pose>
 			<inertial>
 				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
-				<mass>0.13152801243029263</mass>
+				<mass>0.1315280124294498</mass>
 				<inertia>
-					<ixx>0.05090527843040566</ixx>
-					<ixy>-3.3493333307485495e-06</ixy>
-					<ixz>0.0003086387012397938</ixz>
-					<iyy>0.05090527843039015</iyy>
-					<iyz>0.000613928070432214</iyz>
-					<izz>2.1044481994015745e-05</izz>
+					<ixx>0.05090190469684626</ixx>
+					<ixy>-3.3493208073071583e-06</ixy>
+					<ixz>0.0003086295420776442</ixz>
+					<iyy>0.0509019230150866</iyy>
+					<iyz>0.0006130818021459909</iyz>
+					<izz>2.1026163738168032e-05</izz>
 				</inertia>
 			</inertial>
 			<collision name="neck_link2_collision">
@@ -452,9 +452,22 @@
 		<joint name="neck_axis0" type="revolute">
 			<parent>torso</parent>
 			<child>neck_link1</child>
-			<pose frame="">-0.003749999999999098 -0.007499999999999999 0.0037499999999996447 0 0 0</pose>
+			<pose frame="">-0.0037499889515112904 -0.00751023412654152 0.003729465321943408 0 0 0</pose>
 			<axis>
 				<xyz>-1.0000000000000013 1.2246467991473535e-16 -4.641349029366492e-16</xyz>
+				<limit>
+					<lower>0.0</lower>
+					<upper>0.0</upper>
+				</limit>
+				<use_parent_model_frame>0</use_parent_model_frame>
+			</axis>
+		</joint>
+		<joint name="neck_axis1" type="revolute">
+			<parent>neck_link1</parent>
+			<child>neck_link2</child>
+			<pose frame="">0.003750000000023919 0.007489717122665607 0.003770495646779182 0 0 0</pose>
+			<axis>
+				<xyz>-1.269691636732058e-18 0.9999962609130065 0.00273462246129211</xyz>
 				<limit>
 					<lower>0.0</lower>
 					<upper>0.0</upper>
@@ -465,9 +478,9 @@
 		<joint name="neck_axis2" type="revolute">
 			<parent>neck_link2</parent>
 			<child>head</child>
-			<pose frame="">-7.688071722614438e-05 -0.027311389107341606 -0.1682977750159958 0 0 0</pose>
+			<pose frame="">-7.688070023444e-05 -0.02685105605353994 -0.1683718324388449 0 0 0</pose>
 			<axis>
-				<xyz>-6.364642665032203e-48 1.3648453589321352e-16 1.0</xyz>
+				<xyz>-3.331592236309741e-19 -0.00273462246129211 0.9999962609130065</xyz>
 				<limit>
 					<lower>0.0</lower>
 					<upper>0.0</upper>
@@ -477,7 +490,7 @@
 		</joint>
 		<joint name="shoulder_left_axis0" type="revolute">
 			<parent>torso</parent>
-			<child>shoulder_link1_left</child>
+			<child>shoulder_left_link1</child>
 			<pose frame="">0.003749999999999929 -0.007500000000000009 0.00375 0 0 0</pose>
 			<axis>
 				<xyz>-1.0 3.6718754185775985e-18 -1.3800689865091197e-15</xyz>
@@ -489,7 +502,7 @@
 			</axis>
 		</joint>
 		<joint name="shoulder_left_axis2" type="revolute">
-			<parent>shoulder_link2_left</parent>
+			<parent>shoulder_left_link2</parent>
 			<child>upperarm_left</child>
 			<pose frame="">-0.011229183439700918 -0.021779896194868777 0.18886492305624658 0 0 0</pose>
 			<axis>
@@ -503,7 +516,7 @@
 		</joint>
 		<joint name="shoulder_right_axis0" type="revolute">
 			<parent>torso</parent>
-			<child>shoulder_link1_right</child>
+			<child>shoulder_right_link1</child>
 			<pose frame="">-0.003750000000000959 -0.007499999999999998 0.003749999999999787 0 0 0</pose>
 			<axis>
 				<xyz>1.0 -2.8134622404579915e-17 -1.3122219360502844e-15</xyz>
@@ -514,12 +527,38 @@
 				<use_parent_model_frame>0</use_parent_model_frame>
 			</axis>
 		</joint>
+		<joint name="shoulder_right_axis1" type="revolute">
+			<parent>shoulder_right_link1</parent>
+			<child>shoulder_right_link2</child>
+			<pose frame="">0.003750000000000071 0.007499999999999988 0.003749999999999929 0 0 0</pose>
+			<axis>
+				<xyz>0.0 1.0 1.6292900917847355e-16</xyz>
+				<limit>
+					<lower>0.0</lower>
+					<upper>0.0</upper>
+				</limit>
+				<use_parent_model_frame>0</use_parent_model_frame>
+			</axis>
+		</joint>
 		<joint name="shoulder_right_axis2" type="revolute">
-			<parent>shoulder_link2_right</parent>
+			<parent>shoulder_right_link2</parent>
 			<child>upperarm_right</child>
 			<pose frame="">0.011229161032645684 -0.02177994716503367 0.18886512505659703 0 0 0</pose>
 			<axis>
 				<xyz>1.2246467991473532e-16 -1.6292900917847355e-16 1.0</xyz>
+				<limit>
+					<lower>0.0</lower>
+					<upper>0.0</upper>
+				</limit>
+				<use_parent_model_frame>0</use_parent_model_frame>
+			</axis>
+		</joint>
+		<joint name="shoulder_left_axis1" type="revolute">
+			<parent>shoulder_left_link1</parent>
+			<child>shoulder_left_link2</child>
+			<pose frame="">-0.003749999999999858 0.007500000000000005 0.00375 0 0 0</pose>
+			<axis>
+				<xyz>0.0 -1.0 -1.6292900917847355e-16</xyz>
 				<limit>
 					<lower>0.0</lower>
 					<upper>0.0</upper>
