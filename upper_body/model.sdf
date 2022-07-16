@@ -73,10 +73,10 @@
 				<mass>1.0074631712298445</mass>
 				<inertia>
 					<ixx>0.03147609940082702</ixx>
-					<ixy>0.0002711063342370113</ixy>
+					<ixy>0.00027110633423701156</ixy>
 					<ixz>0.029796916712719362</ixz>
 					<iyy>0.07977080588923677</iyy>
-					<iyz>-6.286623892047672e-05</iyz>
+					<iyz>-6.286623892047694e-05</iyz>
 					<izz>0.04941233306547431</izz>
 				</inertia>
 			</inertial>
@@ -385,7 +385,7 @@
 				</geometry>
 			</visual>
 		</link>
-		<link name="neck_link1">
+		<link name="head_link1">
 			<self_collide>false</self_collide>
 			<pose frame="">0.0037499889567509334 0.007510234121302186 0.6220205346780562 0.0 -0.0 0.0</pose>
 			<inertial>
@@ -400,24 +400,24 @@
 					<izz>2.106285190859084e-05</izz>
 				</inertia>
 			</inertial>
-			<collision name="neck_link1_collision">
+			<collision name="head_link1_collision">
 				<geometry>
 					<mesh>
-						<uri>model://upper_body/meshes/CAD/neck_link1.stl</uri>
+						<uri>model://upper_body/meshes/CAD/head_link1.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
 			</collision>
-			<visual name="neck_link1_visual">
+			<visual name="head_link1_visual">
 				<geometry>
 					<mesh>
-						<uri>model://upper_body/meshes/CAD/neck_link1.stl</uri>
+						<uri>model://upper_body/meshes/CAD/head_link1.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
 			</visual>
 		</link>
-		<link name="neck_link2">
+		<link name="head_link2">
 			<self_collide>false</self_collide>
 			<pose frame="">-0.0037499999947842766 -0.00748971712790494 0.6219795043532205 0.0 -0.0 0.0</pose>
 			<inertial>
@@ -432,58 +432,58 @@
 					<izz>2.1026163738168032e-05</izz>
 				</inertia>
 			</inertial>
-			<collision name="neck_link2_collision">
+			<collision name="head_link2_collision">
 				<geometry>
 					<mesh>
-						<uri>model://upper_body/meshes/CAD/neck_link2.stl</uri>
+						<uri>model://upper_body/meshes/CAD/head_link2.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
 			</collision>
-			<visual name="neck_link2_visual">
+			<visual name="head_link2_visual">
 				<geometry>
 					<mesh>
-						<uri>model://upper_body/meshes/CAD/neck_link2.stl</uri>
+						<uri>model://upper_body/meshes/CAD/head_link2.stl</uri>
 						<scale>0.001 0.001 0.001</scale>
 					</mesh>
 				</geometry>
 			</visual>
 		</link>
-		<joint name="neck_axis0" type="revolute">
+		<joint name="head_axis0" type="revolute">
 			<parent>torso</parent>
-			<child>neck_link1</child>
+			<child>head_link1</child>
 			<pose frame="">-0.0037499889515112904 -0.00751023412654152 0.003729465321943408 0 0 0</pose>
 			<axis>
 				<xyz>-1.0000000000000013 1.2246467991473535e-16 -4.641349029366492e-16</xyz>
 				<limit>
-					<lower>0.0</lower>
-					<upper>0.0</upper>
+					<lower>-0.7853981633974483</lower>
+					<upper>0.7853981633974483</upper>
 				</limit>
 				<use_parent_model_frame>0</use_parent_model_frame>
 			</axis>
 		</joint>
-		<joint name="neck_axis1" type="revolute">
-			<parent>neck_link1</parent>
-			<child>neck_link2</child>
+		<joint name="head_axis1" type="revolute">
+			<parent>head_link1</parent>
+			<child>head_link2</child>
 			<pose frame="">0.003750000000023919 0.007489717122665607 0.003770495646779182 0 0 0</pose>
 			<axis>
 				<xyz>-1.269691636732058e-18 0.9999962609130065 0.00273462246129211</xyz>
 				<limit>
-					<lower>0.0</lower>
-					<upper>0.0</upper>
+					<lower>-0.7853981633974483</lower>
+					<upper>0.7853981633974483</upper>
 				</limit>
 				<use_parent_model_frame>0</use_parent_model_frame>
 			</axis>
 		</joint>
-		<joint name="neck_axis2" type="revolute">
-			<parent>neck_link2</parent>
+		<joint name="head_axis2" type="revolute">
+			<parent>head_link2</parent>
 			<child>head</child>
 			<pose frame="">-7.688070023444e-05 -0.02685105605353994 -0.1683718324388449 0 0 0</pose>
 			<axis>
 				<xyz>-3.331592236309741e-19 -0.00273462246129211 0.9999962609130065</xyz>
 				<limit>
-					<lower>0.0</lower>
-					<upper>0.0</upper>
+					<lower>-0.7853981633974483</lower>
+					<upper>0.7853981633974483</upper>
 				</limit>
 				<use_parent_model_frame>0</use_parent_model_frame>
 			</axis>
@@ -495,8 +495,8 @@
 			<axis>
 				<xyz>-1.0 3.6718754185775985e-18 -1.3800689865091197e-15</xyz>
 				<limit>
-					<lower>0.0</lower>
-					<upper>0.0</upper>
+					<lower>-1.3962634015954636</lower>
+					<upper>0.17453292519943295</upper>
 				</limit>
 				<use_parent_model_frame>0</use_parent_model_frame>
 			</axis>

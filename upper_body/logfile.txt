@@ -34,22 +34,22 @@ exporting stl of shoulder_left_link1
 Body: shoulder_left_link2
 COM: shoulder_left_link2 21.35530384599511 -0.7800000061764059 48.1284729695386
 exporting stl of shoulder_left_link2
-Body: neck_link1
-COM: neck_link1 0.3749988956750933 0.7510234121302186 62.20205346780562
-exporting stl of neck_link1
-Body: neck_link2
-COM: neck_link2 -0.37499999947842766 -0.748971712790494 62.19795043532205
-exporting stl of neck_link2
-Joint: EXPORT_neck_axis0
+Body: head_link1
+COM: head_link1 0.3749988956750933 0.7510234121302186 62.20205346780562
+exporting stl of head_link1
+Body: head_link2
+COM: head_link2 -0.37499999947842766 -0.748971712790494 62.19795043532205
+exporting stl of head_link2
+Joint: EXPORT_head_axis0
 	parent: torso
-	child: neck_link1
+	child: head_link1
 	pos: -0.37499889515112905	-0.751023412654152	0.3729465321943408
-Joint: EXPORT_neck_axis1
-	parent: neck_link1
-	child: neck_link2
+Joint: EXPORT_head_axis1
+	parent: head_link1
+	child: head_link2
 	pos: 0.3750000000023919	0.7489717122665607	0.37704956467791817
-Joint: EXPORT_neck_axis2
-	parent: neck_link2
+Joint: EXPORT_head_axis2
+	parent: head_link2
 	child: head
 	pos: -0.007688070023443999	-2.685105605353994	-16.83718324388449
 Joint: EXPORT_shoulder_left_axis0
