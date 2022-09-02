@@ -68,7 +68,7 @@
     <child link="elbow_right"/>
     <origin rpy="0 0 0" xyz="-0.012   0.02   -0.3167"/>
     <axis xyz="-1 0 0"/>
-    <limit effort="1.0" lower="0.0" upper="0.73" velocity="10.0" />
+    <limit effort="1.0" lower="0.0" upper="0.9" velocity="10.0" />
   </joint>
   <joint name="elbow_right_axis1" type="revolute">
     <parent link="elbow_right"/>
@@ -82,7 +82,7 @@
     <child link="elbow_left"/>
     <origin rpy="0 0 0" xyz="0.012   0.02   -0.3167"/>
     <axis xyz="-1 0 0"/>
-    <limit effort="1.0" lower="0.0" upper="0.73" velocity="10.0" />
+    <limit effort="1.0" lower="0.0" upper="0.9" velocity="10.0" />
   </joint>
   <joint name="elbow_left_axis1" type="revolute">
     <parent link="elbow_left"/>
