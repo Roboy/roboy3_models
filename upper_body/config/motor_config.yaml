@@ -3,11 +3,11 @@ head:
   use_motor_config: true
   endeffector: "head"
 shoulder_left:
-  motor_ids: [0,1,2,3,4,5,6,7,16,17] # ,2
+  motor_ids: [0,1,2,3,4,5,6,7,16,17] #[7,6,5,4,3,2,1,0,16,17] #[0,1,2,3,4,5,6,7,16,17] # ,2
   use_motor_config: true
   endeffector: "hand_left"
 shoulder_right:
-  motor_ids: [8,9,10,11,12,13,14,15,18,19] # 18, 19
+  motor_ids: [8,9,10,11,12,13,14,15,19] # 18, 19
   use_motor_config: true
   endeffector: "hand_right"
 wrist_left:
@@ -29,4 +29,4 @@ hand_left:
   endeffector: "hand_left"
   max_setpoints: [775, 900, 1000, 1000]
 spine:
-  motor_ids: [47, 48, 49, 50] # 46,50,51]
+  motor_ids: [47, 48, 49, 50, 46,50,51]
